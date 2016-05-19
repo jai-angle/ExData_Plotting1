@@ -14,7 +14,7 @@ plotvalues <- as.numeric(plotdata$Global_active_power)
 plotdatetime <- strptime(paste(plotdata$Date, plotdata$Time, sep = " "), format = "%d/%m/%Y %H:%M:%S" )
 
 ##now plot the graph as per the requirement
-plot(plotdatetime, plotvalues, type = "l", xlab = "", ylab = "Global Active Power (killowatts)", main = "Global Active Power")
+plot(plotdatetime, plotvalues, type = "l", xlab = "", ylab = "Global Active Power (killowatts)")
 
 ## once happy with the plot; now put it in the file and close it.
 dev.copy(png, file = "~/ExData_Plotting1/plot2.png", width = 480, height = 480)
